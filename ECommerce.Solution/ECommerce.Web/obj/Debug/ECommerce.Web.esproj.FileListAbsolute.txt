@@ -1,0 +1,2 @@
+C:\Code Repo\Personal\ECommerce.Web.CleanArchitecture\ECommerce.Solution\ECommerce.Web\obj\Debug\ECommerce.Web.esproj.SuggestedBindingRedirects.cache
+C:\Code Repo\Personal\ECommerce.Web.CleanArchitecture\ECommerce.Solution\ECommerce.Web\obj\Debug\ECommerce.Web.esproj.CoreCompileInputs.cache
