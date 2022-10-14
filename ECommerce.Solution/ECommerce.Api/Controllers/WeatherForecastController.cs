@@ -1,3 +1,4 @@
+using ECommerce.Application.Users.Queries.GetUsers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerce.Api.Controllers
@@ -12,15 +13,18 @@ namespace ECommerce.Api.Controllers
     };
 
         private readonly ILogger<WeatherForecastController> _logger;
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        private readonly IGetUsersQuery _query;
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IGetUsersQuery query)
         {
             _logger = logger;
+            _query = query;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
-        public IEnumerable<WeatherForecast> Get()
+        public async Task<IEnumerable<WeatherForecast>> Get()
         {
+            var users = await _query.Execute();
+
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
