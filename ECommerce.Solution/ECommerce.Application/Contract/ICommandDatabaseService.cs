@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ECommerce.Application.Contract
 {
-    public interface IDatabaseService
+    public interface ICommandDatabaseService
     {
         DbSet<User> User { get; set; }
         void Save();

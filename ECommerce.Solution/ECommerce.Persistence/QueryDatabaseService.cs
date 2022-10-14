@@ -1,5 +1,4 @@
-﻿using Dapper;
-using DapperExtensions;
+﻿using DapperExtensions;
 using ECommerce.Application.Contract;
 using ECommerce.Domain.Common;
 using ECommerce.Persistence.QueryDatabaseConfiguration;

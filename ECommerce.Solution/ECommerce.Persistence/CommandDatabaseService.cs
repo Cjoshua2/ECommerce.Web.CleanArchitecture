@@ -6,10 +6,10 @@ using Microsoft.Extensions.Configuration;
 
 namespace ECommerce.Persistence
 {
-    public class DatabaseService : DbContext, IDatabaseService
+    public class CommandDatabaseService : DbContext, ICommandDatabaseService
     {
         private readonly IConfiguration _configuration;
-        public DatabaseService(IConfiguration configuration)
+        public CommandDatabaseService(IConfiguration configuration)
         {
             _configuration = configuration;
 
