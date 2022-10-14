@@ -1,7 +1,8 @@
 
 # ECommerce
 
-A self ecommerce project implemented using Clean Architecture with CQRS pattern
+A self ecommerce project implemented using Clean Architecture with CQRS pattern.
+ORM used are Entity Framework Core and Dapper
 
 
 
