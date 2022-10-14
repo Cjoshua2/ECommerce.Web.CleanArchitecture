@@ -5,7 +5,7 @@ namespace ECommerce.Application.Contract
 {
     public interface IDatabaseService
     {
-        DbSet<User> Users { get; set; }
+        DbSet<User> User { get; set; }
         void Save();
     }
 }

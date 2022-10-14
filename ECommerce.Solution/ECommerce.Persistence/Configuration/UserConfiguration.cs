@@ -11,8 +11,8 @@ namespace ECommerce.Persistence.Configuration
             builder.HasKey(x => x.Id);
 
             builder.HasData(
-                new User() { Id = 1, Username = "John", Password = "1234", CreatedDate = DateTime.UtcNow, UpdatedDate = DateTime.UtcNow },
-                new User() { Id = 2, Username = "Jane", Password = "1234", CreatedDate = DateTime.UtcNow, UpdatedDate = DateTime.UtcNow }
+                new User() { Id = 1, Username = "John", Password = "1234" },
+                new User() { Id = 2, Username = "Jane", Password = "1234" }
                 );
         }
     }

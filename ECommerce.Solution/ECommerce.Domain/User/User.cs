@@ -7,12 +7,10 @@ using System.Threading.Tasks;
 
 namespace ECommerce.Domain.User
 {
-    public class User : ITimeStampedEntity
+    public class User : IEntity
     {
         public int Id { get; set; }
         public string Username { get; set; } = string.Empty;
         public string Password { get; set; } = string.Empty;
-        public DateTime CreatedDate { get; set; }
-        public DateTime UpdatedDate { get; set; }
     }
 }

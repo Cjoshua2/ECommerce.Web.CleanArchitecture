@@ -1,30 +1,31 @@
 ﻿using ECommerce.Application.Contract;
 using ECommerce.Application.Users.Queries;
+using ECommerce.Domain.User;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ECommerce.Application.Users.Handlers
 {
     public class GetUsersHandler : IRequestHandler<GetUsersQuery, List<GetUsersModel>>
     {
-        private readonly IDatabaseService _database;
-        public GetUsersHandler(IDatabaseService database)
+        private readonly IQueryDatabaseService<User> _queryDatabase;
+        public GetUsersHandler(IQueryDatabaseService<User> queryDatabase)
         {
-            _database = database;
+            _queryDatabase = queryDatabase;
         }
         public async Task<List<GetUsersModel>> Handle(GetUsersQuery request, CancellationToken cancellationToken)
         {
-            return await _database.Users.Select(user => new GetUsersModel
+
+            var result = await _queryDatabase.GetAll();
+
+            var users = result.Select(user => new GetUsersModel
             {
                 Id = user.Id,
                 Username = user.Username,
                 Password = user.Password
-            }).ToListAsync(cancellationToken);
+            }).ToList();
+
+            return users;
         }
     }
 }
