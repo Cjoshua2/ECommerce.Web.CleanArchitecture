@@ -1,4 +1,6 @@
+using ECommerce.Application;
 using System.Runtime.Loader;
+using MediatR;
 
 var files = Directory.GetFiles(
             AppDomain.CurrentDomain.BaseDirectory,
@@ -19,6 +21,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.Scan(p => p.FromAssemblies(assemblies)
         .AddClasses()
         .AsMatchingInterface());
+
+builder.Services.AddMediatR(typeof(CQRSEntrypoint).Assembly);
 
 var app = builder.Build();
 

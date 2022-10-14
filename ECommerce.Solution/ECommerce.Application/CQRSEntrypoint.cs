@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ECommerce.Application.Users.Queries.GetUsers
+namespace ECommerce.Application
 {
-    public interface IGetUsersQuery
+    public class CQRSEntrypoint
     {
-        Task<List<GetUsersModel>> Execute();
     }
 }

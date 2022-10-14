@@ -1,4 +1,5 @@
-using ECommerce.Application.Users.Queries.GetUsers;
+using ECommerce.Application.Users.Queries;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerce.Api.Controllers
@@ -13,17 +14,17 @@ namespace ECommerce.Api.Controllers
     };
 
         private readonly ILogger<WeatherForecastController> _logger;
-        private readonly IGetUsersQuery _query;
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IGetUsersQuery query)
+        private readonly IMediator _mediator;
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IMediator mediator)
         {
             _logger = logger;
-            _query = query;
+            _mediator = mediator;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
         public async Task<IEnumerable<WeatherForecast>> Get()
         {
-            var users = await _query.Execute();
+            var users = await _mediator.Send(new GetUsersQuery());
 
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {

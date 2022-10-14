@@ -67,3 +67,6 @@ C:\Code Repo\Personal\ECommerce.Web.CleanArchitecture\ECommerce.Solution\ECommer
 C:\Code Repo\Personal\ECommerce.Web.CleanArchitecture\ECommerce.Solution\ECommerce.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Code Repo\Personal\ECommerce.Web.CleanArchitecture\ECommerce.Solution\ECommerce.Api\bin\Debug\net6.0\ECommerce.Persistence.dll
 C:\Code Repo\Personal\ECommerce.Web.CleanArchitecture\ECommerce.Solution\ECommerce.Api\bin\Debug\net6.0\ECommerce.Persistence.pdb
+C:\Code Repo\Personal\ECommerce.Web.CleanArchitecture\ECommerce.Solution\ECommerce.Api\bin\Debug\net6.0\MediatR.dll
+C:\Code Repo\Personal\ECommerce.Web.CleanArchitecture\ECommerce.Solution\ECommerce.Api\bin\Debug\net6.0\MediatR.Contracts.dll
+C:\Code Repo\Personal\ECommerce.Web.CleanArchitecture\ECommerce.Solution\ECommerce.Api\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

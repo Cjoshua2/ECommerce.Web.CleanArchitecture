@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ECommerce.Application.Users.Queries.GetUsers
+namespace ECommerce.Application.Users.Queries
 {
     public class GetUsersModel
     {
