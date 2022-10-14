@@ -15,7 +15,7 @@ namespace ECommerce.Persistence
 
             Database.EnsureCreated();
         }
-        public DbSet<User> User { get; set; }
+        public DbSet<User> User { get; set; } = null!;
 
         public void Save()
         {

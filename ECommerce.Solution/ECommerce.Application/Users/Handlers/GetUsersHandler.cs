@@ -3,7 +3,6 @@ using ECommerce.Application.Users.Queries;
 using ECommerce.Domain.User;
 using MediatR;
 
-
 namespace ECommerce.Application.Users.Handlers
 {
     public class GetUsersHandler : IRequestHandler<GetUsersQuery, List<GetUsersModel>>
@@ -15,7 +14,6 @@ namespace ECommerce.Application.Users.Handlers
         }
         public async Task<List<GetUsersModel>> Handle(GetUsersQuery request, CancellationToken cancellationToken)
         {
-
             var result = await _queryDatabase.GetAll();
 
             var users = result.Select(user => new GetUsersModel
