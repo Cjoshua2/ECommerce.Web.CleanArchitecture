@@ -12,17 +12,16 @@ var assemblies = files
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
 builder.Services.Scan(p => p.FromAssemblies(assemblies)
         .AddClasses()
         .AsMatchingInterface());
 
 builder.Services.AddMediatR(typeof(CQRSEntrypoint).Assembly);
+
+builder.Services.AddControllers();
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 

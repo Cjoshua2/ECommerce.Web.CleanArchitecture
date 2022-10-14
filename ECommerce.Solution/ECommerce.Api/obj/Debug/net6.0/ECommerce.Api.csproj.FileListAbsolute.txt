@@ -70,3 +70,5 @@ C:\Code Repo\Personal\ECommerce.Web.CleanArchitecture\ECommerce.Solution\ECommer
 C:\Code Repo\Personal\ECommerce.Web.CleanArchitecture\ECommerce.Solution\ECommerce.Api\bin\Debug\net6.0\MediatR.dll
 C:\Code Repo\Personal\ECommerce.Web.CleanArchitecture\ECommerce.Solution\ECommerce.Api\bin\Debug\net6.0\MediatR.Contracts.dll
 C:\Code Repo\Personal\ECommerce.Web.CleanArchitecture\ECommerce.Solution\ECommerce.Api\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Code Repo\Personal\ECommerce.Web.CleanArchitecture\ECommerce.Solution\ECommerce.Api\bin\Debug\net6.0\ECommerce.Commons.dll
+C:\Code Repo\Personal\ECommerce.Web.CleanArchitecture\ECommerce.Solution\ECommerce.Api\bin\Debug\net6.0\ECommerce.Commons.pdb

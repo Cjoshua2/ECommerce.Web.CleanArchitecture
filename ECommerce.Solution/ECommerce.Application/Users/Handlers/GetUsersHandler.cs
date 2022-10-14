@@ -24,7 +24,7 @@ namespace ECommerce.Application.Users.Handlers
                 Id = user.Id,
                 Username = user.Username,
                 Password = user.Password
-            }).ToListAsync();
+            }).ToListAsync(cancellationToken);
         }
     }
 }

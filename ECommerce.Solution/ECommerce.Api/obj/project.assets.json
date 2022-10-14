@@ -1331,6 +1331,16 @@
           "bin/placeholder/ECommerce.Application.dll": {}
         }
       },
+      "ECommerce.Commons/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ECommerce.Commons.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommerce.Commons.dll": {}
+        }
+      },
       "ECommerce.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3120,6 +3130,11 @@
       "path": "../ECommerce.Application/ECommerce.Application.csproj",
       "msbuildProject": "../ECommerce.Application/ECommerce.Application.csproj"
     },
+    "ECommerce.Commons/1.0.0": {
+      "type": "project",
+      "path": "../ECommerce.Commons/ECommerce.Commons.csproj",
+      "msbuildProject": "../ECommerce.Commons/ECommerce.Commons.csproj"
+    },
     "ECommerce.Domain/1.0.0": {
       "type": "project",
       "path": "../ECommerce.Domain/ECommerce.Domain.csproj",
@@ -3134,6 +3149,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "ECommerce.Application >= 1.0.0",
+      "ECommerce.Commons >= 1.0.0",
       "ECommerce.Domain >= 1.0.0",
       "ECommerce.Persistence >= 1.0.0",
       "MediatR >= 11.0.0",
@@ -3171,6 +3187,9 @@
           "projectReferences": {
             "C:\\Code Repo\\Personal\\ECommerce.Web.CleanArchitecture\\ECommerce.Solution\\ECommerce.Application\\ECommerce.Application.csproj": {
               "projectPath": "C:\\Code Repo\\Personal\\ECommerce.Web.CleanArchitecture\\ECommerce.Solution\\ECommerce.Application\\ECommerce.Application.csproj"
+            },
+            "C:\\Code Repo\\Personal\\ECommerce.Web.CleanArchitecture\\ECommerce.Solution\\ECommerce.Commons\\ECommerce.Commons.csproj": {
+              "projectPath": "C:\\Code Repo\\Personal\\ECommerce.Web.CleanArchitecture\\ECommerce.Solution\\ECommerce.Commons\\ECommerce.Commons.csproj"
             },
             "C:\\Code Repo\\Personal\\ECommerce.Web.CleanArchitecture\\ECommerce.Solution\\ECommerce.Domain\\ECommerce.Domain.csproj": {
               "projectPath": "C:\\Code Repo\\Personal\\ECommerce.Web.CleanArchitecture\\ECommerce.Solution\\ECommerce.Domain\\ECommerce.Domain.csproj"
