@@ -44,3 +44,17 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+*.dll
+*.pdb
+*.suo
+*.Publish.xml
+*.tmproj
+.DS_Store
+*.cache
+bin
+Bin
+App_Data
+App_data
+*~
+*FileListAbsolute.txt
