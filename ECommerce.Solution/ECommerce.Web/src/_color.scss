@@ -1,0 +1,33 @@
+// Grayscale
+$color-black: hsl(0, 0%, 0%); // #000000
+$color-white: hsl(0, 0%, 100%); // #FFFFFF
+
+$color-gray-50: hsl(0, 0%, 98%); // #FAFAFA, rgb(250, 250, 250)
+$color-gray-100: hsl(0, 0%, 96%); // #F5F5F5, rgb(245, 245, 245)
+$color-gray-200: hsl(0, 0%, 93%); // #EEEEEE, rgb(238, 238, 238)
+$color-gray-300: hsl(0, 0%, 88%); // #E0E0E0, rgb(224, 224, 224)
+$color-gray-400: hsl(0, 0%, 74%); // #BDBDBD, rgb(189, 189, 189)
+$color-gray-500: hsl(0, 0%, 62%); // #9E9E9E, rgb(158, 158, 158)
+$color-gray-600: hsl(0, 0%, 46%); // #757575, rgb(117, 117, 117)
+$color-gray-700: hsl(0, 0%, 38%); // #616161, rgb(97, 97, 97)
+$color-gray-800: hsl(0, 0%, 26%); // #424242, rgb(66, 66, 66)
+$color-gray-900: hsl(0, 0%, 13%); // #212121, rgb(33, 33, 33)
+
+// White background text color
+$color-dark-text-primary: $color-gray-900;
+$color-dark-text-secondary: $color-gray-600;
+$color-dark-text-disabled: $color-gray-500;
+
+// Dark background text color
+$color-light-text-primary: $color-white;
+$color-light-text-secondary: $color-gray-400;
+$color-light-text-disabled: $color-gray-600;
+
+// Dark background
+$background-dark-primary: #212121;
+
+// Light background
+$background-light-primary: #ebebeb;
+
+$highlighter-primary: #746ad4;
+

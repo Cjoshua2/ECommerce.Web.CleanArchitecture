@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import '_color.scss';
+
+body {
+  --background-color: #{$background-light-primary}
+}
+body.dark-theme {
+  --background-color: #{$background-dark-primary}
+}
+body{
+    background: var(--background-color)
+}
