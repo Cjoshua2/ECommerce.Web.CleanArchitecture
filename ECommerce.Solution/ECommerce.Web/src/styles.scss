@@ -1,12 +1,87 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/scss/bootstrap';
 @import '_color.scss';
 
 body {
-  --background-color: #{$background-light-primary}
+  --primary-background-color: #{$background-light-primary};
+  --secondary-background-color: #{$background-light-secondary};
+  --primary-text-color: #{$color-light-text-primary};
+  --secondary-text-color: #{$color-light-text-secondary};
+  --primary-highlighter-color: #{$highlighter-primary};
 }
 body.dark-theme {
-  --background-color: #{$background-dark-primary}
+  --primary-background-color: #{$background-dark-primary};
+  --secondary-background-color: #{$background-dark-secondary};
+  --primary-text-color: #{$color-dark-text-primary};
+  --secondary-text-color: #{$color-light-text-secondary};
+  --primary-highlighter-color: #{$highlighter-primary};
 }
 body{
-    background: var(--background-color)
+    font-family: 'Montserrat';
+    background: var(--primary-background-color);
+    color: var(--primary-text-color)
+}
+.primary-text-color {
+  color: var(--primary-text-color)
+}
+.secondary-text-color {
+  color: var(--secondary-text-color)
+}
+.primary-highlighter-color{
+  color: var(--primary-highlighter-color);
+}
+.primary-highlighter-background-color {
+  background: var(--primary-highlighter-color);
+}
+.text-box{
+    background: var(--secondary-background-color);
+    color: var(--primary-text-color);
+    outline: 0;
+    border: 0;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 12px;
+    min-width: 36ch;
+
+    &:focus{
+        border-color: #86b7fe;
+        box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+    }
+    &:active{
+        border-color: #86b7fe;
+        box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+    }
+}
+
+.primary-button{
+    background: var(--primary-highlighter-color);
+    color: white;
+    outline: 0;
+    border: 0;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 12px;
+    min-width: 36ch;
+
+    &:focus{
+        border-color: #86b7fe;
+        box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+    }
+    &:active{
+        border-color: #86b7fe;
+        box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+    }
+}
+.hoverable-text{
+    &:hover{
+        cursor: pointer;
+    }
+}
+.logo{
+    background-image: url(assets/logo/printing.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 112px;
+    width: 112px;
 }

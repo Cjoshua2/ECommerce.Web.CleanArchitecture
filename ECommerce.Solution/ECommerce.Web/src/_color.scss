@@ -1,6 +1,6 @@
 // Grayscale
 $color-black: hsl(0, 0%, 0%); // #000000
-$color-white: hsl(0, 0%, 100%); // #FFFFFF
+$color-white: hsl(0, 0%, 90%); // #FFFFFF
 
 $color-gray-50: hsl(0, 0%, 98%); // #FAFAFA, rgb(250, 250, 250)
 $color-gray-100: hsl(0, 0%, 96%); // #F5F5F5, rgb(245, 245, 245)
@@ -14,20 +14,22 @@ $color-gray-800: hsl(0, 0%, 26%); // #424242, rgb(66, 66, 66)
 $color-gray-900: hsl(0, 0%, 13%); // #212121, rgb(33, 33, 33)
 
 // White background text color
-$color-dark-text-primary: $color-gray-900;
-$color-dark-text-secondary: $color-gray-600;
-$color-dark-text-disabled: $color-gray-500;
+$color-dark-text-primary: $color-white;
+$color-dark-text-secondary: $color-gray-400;
+$color-dark-text-disabled: $color-gray-600;
 
 // Dark background text color
-$color-light-text-primary: $color-white;
-$color-light-text-secondary: $color-gray-400;
-$color-light-text-disabled: $color-gray-600;
+$color-light-text-primary: $color-gray-900;
+$color-light-text-secondary: $color-gray-600;
+$color-light-text-disabled: $color-gray-500;
 
 // Dark background
 $background-dark-primary: #212121;
+$background-dark-secondary: #272727;
 
 // Light background
 $background-light-primary: #ebebeb;
+$background-light-secondary: #e1e1e1;
 
 $highlighter-primary: #746ad4;
 

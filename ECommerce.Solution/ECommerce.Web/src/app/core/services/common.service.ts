@@ -10,7 +10,7 @@ export class CommonService implements ICommonService {
 
     this._toggleTheme(isSet)
 
-    if (!isSet) {
+    if (isSet) {
       document.body.classList.toggle('dark-theme')
     }
     

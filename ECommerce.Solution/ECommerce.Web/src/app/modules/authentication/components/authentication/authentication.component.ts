@@ -8,13 +8,7 @@ import { CommonService } from '../../../../core/services/common.service';
 })
 export class AuthenticationComponent implements OnInit {
 
-  constructor(private _commonService: CommonService) { }
+  constructor() { }
 
-  ngOnInit(): void {
-    this._commonService.loadTheme()
-  }
-
-  toggle() {
-    this._commonService.toggleTheme()
-  }
+  ngOnInit(): void { }
 }

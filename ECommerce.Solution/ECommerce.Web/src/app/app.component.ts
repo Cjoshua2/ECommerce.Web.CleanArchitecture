@@ -1,6 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { CommonService } from './core/services/common.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +8,9 @@ import { FormControl } from '@angular/forms';
 })
 export class AppComponent {
 
-  constructor() {
+  constructor(private _commonService: CommonService) {
   }
-
+  ngOnInit(): void {
+    this._commonService.loadTheme()
+  }
 }
