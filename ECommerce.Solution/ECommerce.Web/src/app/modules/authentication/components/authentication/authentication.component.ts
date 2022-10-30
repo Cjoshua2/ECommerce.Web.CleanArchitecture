@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonService } from '../../../../core/services/common.service';
 
 @Component({
   selector: 'app-authentication',
