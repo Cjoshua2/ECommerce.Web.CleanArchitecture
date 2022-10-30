@@ -20,7 +20,7 @@ export class AuthorizationService extends BaseComponent implements IAuthorizatio
   isLoggedIn(userId: number): PermissionResult {
     //check if user is currently logged in
     return <PermissionResult>{
-      hasAccess: true,
+      hasAccess: false,
       errorMsg: undefined
     }
   }

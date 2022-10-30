@@ -11,9 +11,9 @@
     <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\ECommerce.Web</BuildOutputFolder>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="src\app\core\guards\" />
     <Folder Include="src\app\core\constants\" />
     <Folder Include="src\app\core\exceptions\" />
+    <Folder Include="src\app\core\guards\error-type-guard\" />
     <Folder Include="src\app\core\services\" />
     <Folder Include="src\app\modules\authentication\components\" />
     <Folder Include="src\app\shared\components\" />
